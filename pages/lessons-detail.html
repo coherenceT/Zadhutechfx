@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Curriculum | Zadhutechfx</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .academy-hero {
+            padding: 160px 0 80px;
+            background: var(--charcoal-blue);
+            color: var(--white);
+            text-align: center;
+        }
+        .curriculum-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 80px 0;
+        }
+        .module-card {
+            padding: 2.5rem;
+            background: var(--white-3);
+            border-radius: 20px;
+            border: 1px solid var(--alabaster-grey);
+        }
+        .module-number {
+            font-weight: 800;
+            color: var(--charcoal-blue);
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+            display: block;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <header class="glass">
+        <nav class="container">
+            <div class="logo">
+                <img src="../ZADHUTECHFX.jpeg" alt="Zadhutechfx Logo">
+                <span>ZADHUTECH</span>
+            </div>
+            <div class="nav-cta">
+                <a href="../index.html" class="btn btn-outline">Back Home</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="academy-hero">
+            <div class="container">
+                <div class="badge dark">Academy Details</div>
+                <h1>Comprehensive Curriculum</h1>
+                <p>From the first candle to advanced institutional order flow.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="curriculum-grid">
+                <div class="module-card fade-in">
+                    <span class="module-number">MODULE 01</span>
+                    <h3>The Foundation</h3>
+                    <p>Price action mechanics, candlestick analysis, and market rhythm.</p>
+                </div>
+                <div class="module-card fade-in">
+                    <span class="module-number">MODULE 02</span>
+                    <h3>The Edge</h3>
+                    <p>Supply & Demand, Liquidity pools, and identifying institutional footprints.</p>
+                </div>
+                <div class="module-card fade-in">
+                    <span class="module-number">MODULE 03</span>
+                    <h3>Execution</h3>
+                    <p>High-probability entry models, scaling techniques, and exit management.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-bottom: 80px;">
+                <a href="join.html" class="btn btn-primary">Enroll in the Academy</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="section-padding">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zadhutechfx. Academy Section.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+</html>

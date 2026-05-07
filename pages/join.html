@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Zadhutechfx | Premium Trading Community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .join-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 20px 60px;
+            background: var(--white-2);
+        }
+        .join-card {
+            background: var(--white-3);
+            width: 100%;
+            max-width: 600px;
+            padding: 3rem;
+            border-radius: 32px;
+            box-shadow: 0 40px 100px rgba(43, 55, 73, 0.1);
+            border: 1px solid var(--alabaster-grey);
+        }
+        .join-card h2 { margin-bottom: 1rem; }
+        .join-card p { color: #666; margin-bottom: 2.5rem; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; font-size: 0.9rem; }
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 1rem 1.25rem;
+            border-radius: 12px;
+            border: 1px solid var(--alabaster-grey);
+            background: var(--white-2);
+            font-family: inherit;
+            transition: 0.3s;
+        }
+        .form-group input:focus { border-color: var(--charcoal-blue); outline: none; box-shadow: 0 0 0 4px rgba(43, 55, 73, 0.05); }
+        .back-link { display: inline-block; margin-bottom: 2rem; font-weight: 700; color: var(--charcoal-blue); }
+        
+        /* Submit Button Styling */
+        .btn-submit {
+            display: inline-block;
+            width: 100%;
+            padding: 1.25rem;
+            border-radius: 50px;
+            background: var(--charcoal-blue);
+            color: var(--white);
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(43, 55, 73, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <header class="glass">
+        <nav class="container">
+            <div class="logo">
+                <img src="../ZADHUTECHFX.jpeg" alt="Zadhutechfx Logo">
+                <span>ZADHUTECH</span>
+            </div>
+            <div class="nav-cta">
+                <a href="../index.html" class="btn btn-outline">Back Home</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="join-section">
+        <div class="join-card fade-in">
+            <a href="../index.html" class="back-link">← Return to main site</a>
+            <h2>Start Your Journey</h2>
+            <p>Select your preferred service and our team will get back to you within 24 hours.</p>
+            
+            <form action="#">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label>Service of Interest</label>
+                    <select required>
+                        <option value="">Select a service...</option>
+                        <option value="academy">Trading Academy (Lessons)</option>
+                        <option value="management">Account Management</option>
+                        <option value="bots">Bot Development</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Message (Optional)</label>
+                    <textarea rows="4" placeholder="Tell us about your trading goals..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit Application</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="../main.js"></script>
+</body>
+</html>
